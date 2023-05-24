@@ -44,3 +44,6 @@ var change = getMilk(4) //capture and save the result of the function given by r
 Consol.log //is meant for the developper to be able to debug the code, show up in the consol
 
 Math.floor() // it is how to round down a number in js
+
+if (track === "clear") {goStraight();} //example of boolean...
+else {turnRight();}
