@@ -45,5 +45,120 @@ Consol.log //is meant for the developper to be able to debug the code, show up i
 
 Math.floor() // it is how to round down a number in js
 
-if (track === "clear") {goStraight();} //example of boolean...
-else {turnRight();}
+
+
+///////////////////////////////////Boolean, control statements/////////////////////////////////
+
+if (track === "clear") {
+    goStraight();
+} //example of boolean...
+else {
+    turnRight();
+}
+
+even though they all check equality, the triple equal will check the data types
+&& AND
+|| or
+
+var guestList = [1, 3, 5, 8, 4, 0];
+guestList.length
+var guestCount = [5, 7, 8, 3];
+guestCount.includes(guestList);
+
+///////
+var output = []
+output.push(1); 
+now output is [1]. The new elt will be added at the end
+using output.pop() removes the last elt in the array
+
+
+Prints fizz for multiples of 3 and Buzz for multiples of 5 and FizzBuzz for the one of Both 
+var output = [];
+var i = 1;
+
+function fizzBuzz() {    
+
+    if (i % 3 === 0 && i % 5 ===0 ) {
+        output.push("FizzBuzz");
+    }
+        
+    else if (i % 3 === 0) {
+        output.push("fizz");    
+    }
+
+    else if (i % 5 === 0) {
+        output.push("buzz");
+    }
+    
+    else {
+        output.push(i);
+    }
+    
+    i++;
+    
+    console.log(output);   
+}
+
+
+
+
+var names = ["angela", "costa", "san", "Kevine", "Hope"];
+
+function whoisPaying(names) {
+    var numberOfPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    var randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is going to buy lunch toda!";
+}
+
+
+
+
+
+///////////////////////////////////          Loops statements         /////////////////////////////////
+
+function fizzBuzz() {    
+
+    while (i <= 100) {
+        
+        if (i % 3 === 0 && i % 5 ===0 ) {
+            output.push("FizzBuzz");
+        }
+            
+        else if (i % 3 === 0) {
+            output.push("fizz");    
+        }
+
+        else if (i % 5 === 0) {
+            output.push("buzz");
+        }
+        
+        else {
+            output.push(i);
+        }
+        
+        i++;
+    } 
+    
+    console.log(output);   
+}
+
+
+function fibonacciaGenerator(n) {  //the fibonacci numbers...
+    
+    var output = [];
+    if (n ===1) {
+        output = [0];
+    }
+    else if (n ===2) {
+        output = [0,1];
+    }
+    else {
+        output = [0,1];
+        
+        for (var i = 2; i < n; i++) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+        }
+    }
+} 
