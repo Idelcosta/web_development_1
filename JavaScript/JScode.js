@@ -162,3 +162,11 @@ function fibonacciaGenerator(n) {  //the fibonacci numbers...
         }
     }
 } 
+
+
+
+////////////////////////////////  DOM: Document Object Model  /////////////////////////////////
+Dominating the DOM to add functionality to HTML elts 
+any html objects has two...: property (.innerhtml, .style, .firstChild) and methods(.click(), .appendChild(), .setAttribute())
+all of them accessed with javaScript by using a .notation
+
