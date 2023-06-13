@@ -1,0 +1,29 @@
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+p, footer {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    color: rgb(6, 177, 120);
+}
+
+footer {
+    padding-top: 5%;
+}
+
+.color {
+    background-color: rgb(0, 0, 0);
+}
+
+.bigger {
+    font-size: 1000%;
+    color: rgb(3, 255, 171);
+}
+
+.large {
+    font-size: xx-large;
+}
+
