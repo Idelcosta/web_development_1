@@ -179,3 +179,64 @@ The attributes are: class, href... all colored in orange
 document.querySelector("a").attributes;
 document.querySelector("a").getAttribute("href");
 document.querySelector("a").setAttribute("href", "https://www.bing.com");
+
+document.querySelector("button").addEventListener("click", handleClick);  //finds first button in doc and adds event listener so that it listens to click and send it to the function got
+document.querySelector("button").addEventListener("click", handleClick()); // different from up, will call straight away the function
+
+
+////////////////////////////////  Higher Order Functions  /////////////////////////////////
+addEventListener is a HTMLFormControlsCollection, can take other functions as Input
+
+example:
+document.addEventListener("keypress", respondToKey(event));
+function respondToKey(event){
+    console.log("Key pressed.");
+}
+
+
+function add(num1, num2) {
+    return num1+num2;
+}
+
+function multiply(num1, num2) {
+    return num1*num2;
+}
+
+function calculator(num1, num2, operator) {
+    return operator(num1, num2);
+}
+
+
+this. in JS is the identity of the button that triggers the addEventListener
+
+
+////////////////////////////////  Creatig Objects /////////////////////////////////
+
+var houseKeeper1 = {
+    yearOfExperience: 12,
+    name: "jane",
+    cleaningRepertoire: ["bathroom", "lobby", "bedroom"],
+};
+
+Constructor Function take first letter as a capital letter
+function BellBoy (name, age, hasWorkPermit, languages) {
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+}
+
+the initialise Object is:
+var BellBoy1 = new BellBoy("Timmy", 19, true, ["French", "English"]); 
+
+////////////////////////////////  Creatig Objects /////////////////////////////////
+
+call method use : bellBoy1.moveSuitcase();
+
+function HouseKeeper (yearsOfExperience, name, cleaningRepertoire) {
+    this.yearsOfExperience = yearsOfExperience;
+    this.name = name;
+    this.cleaningRepertoire = cleaningRepertoire;
+    this.clean = function() {
+        alert("Cleaning in progress...")};   
+}
