@@ -240,3 +240,26 @@ function HouseKeeper (yearsOfExperience, name, cleaningRepertoire) {
     this.clean = function() {
         alert("Cleaning in progress...")};   
 }
+
+////////////////////////////////  Call Back Function /////////////////////////////////
+
+ waits for events to happen before calling the function
+ the call backs function!!!!!!!!! More research
+
+
+
+
+////////////////////////////////  JQuery /////////////////////////////////
+
+ $("h1").hasClass("margin-50");  //asks if the h1 has the specified class
+
+$("h1").text("bye"); change all the h1 to bye
+$("button").html("halloo"); change the html not just the text. 
+For instance: $("button").html("<em>heeyy</em>") text is italisized but is not for this following  $("button").text("<em>heeyy</em>")
+
+Attributes are text in light blue for vscode
+
+$("h1").before("<button>New</button>"); add button before h1
+$("h1").prepend("<button>New</button>"); add button like    <h1><button>New</button>Hello</h1>
+
+$("h1").remove();
